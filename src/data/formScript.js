@@ -7,7 +7,7 @@ export function handleFormSubmit(event) {
         formObject[key] = value.toString();
     });
 
-    fetch('/api/sendEmail', {
+    fetch('/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -21,7 +21,6 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-
 app.post('/contact', upload.none(), async (req, res) => {
     console.log(req.body);
     let mailOptions = {
@@ -45,8 +44,6 @@ app.post('/contact', upload.none(), async (req, res) => {
         }
     });
 });
-
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
